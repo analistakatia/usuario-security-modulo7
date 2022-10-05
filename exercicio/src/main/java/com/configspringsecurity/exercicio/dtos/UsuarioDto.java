@@ -21,14 +21,13 @@ public class UsuarioDto implements Serializable {
     private String login;
     private String senha;
 
-    public UsuarioDto(UsuarioModel usuario){
-        this.id = usuario.getId();
-        this.nome = usuario.getNome();
-        this.idade = usuario.getIdade();
-        this.telefone = usuario.getTelefone();
-        this.login = usuario.getLogin();
-        this.senha = usuario.getSenha();
+    public UsuarioDto(UsuarioModel usuarioModel){
+        this.id = usuarioModel.getId();
+        this.nome = usuarioModel.getNome();
+        //this.idade = usuarioModel.getIdade();
+        //this.telefone = usuarioModel.getTelefone();
+        this.login = usuarioModel.getLogin();
+        this.senha = usuarioModel.getSenha();
     }
-
 
 }
